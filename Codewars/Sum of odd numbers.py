@@ -17,10 +17,14 @@ Calculate the sum of the numbers in the nth row of this triangle (starting at in
 
 #Solution
 
-<Code>
+def row_sum_odd_numbers(n):
+    return sum(range(n*(n-1)+1, n*(n+1), 2))
+# This solution calculates the first odd number in the nth row with 'n*(n-1)+1' and uses a range to generate all odd numbers in that row, and sum this range after that.
+
 
 #Clever solution
 
-<Code>
+def row_sum_odd_numbers(n):
+   return n**3
 
-#Brief explanatory comment of clever solution
+# This solution uses the insight that the sum of numbers in the nth row of this triangle is always n^3
